@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Greeting</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #ffdde1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+            min-height: 100vh;
+            text-align: center;
+            position: relative;
+            padding-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #d63384;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .message {
+            font-size: 1.5rem;
+            color: #ff4d6d;
+            margin-top: 10px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .heart {
+            font-size: 4rem;
+            color: #ff4d6d;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .rose-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .rose {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-image: url('./redrose.png');
+            background-size: cover;
+            opacity: 1;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            from {
+                transform: translateY(-10vh) rotate(0deg);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 1;
+            }
+        }
+
+        .image-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-beside {
+            font-size: 1.2rem;
+            color: #d63384;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .extra-sections {
+            margin-top: 40px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .extra-sections p {
+            font-size: 1.5rem;
+            color: #ff4d6d;
+            margin: 10px 0;
+        }
+
+        audio {
+            display: none;
+        }
+
+        .love-container {
+
+            padding: 30px;
+            /* background: white; */
+            border-radius: 10px;
+            /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); */
+        }
+    </style>
+</head>
+
+<body>
+
+    <audio autoplay loop>
+        <source src="your-music-url.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="image-section">
+        <img src="./WhatsApp Image 2025-01-07 at 16.01.22_d35c98f5.jpg" alt="Your Girl">
+        <p class="text-beside">You are the most beautiful person inside and out, and I am grateful for every moment with
+            you.</p>
+    </div>
+
+    <div class="container love-container">
+        <h1>Happy Valentine's Day, My Love! ❤️</h1>
+        <p class="message">You are my sunshine on a cloudy day, my love forever and always! 💕</p>
+        <i class="fa-solid fa-heart heart"></i>
+    </div>
+
+
+
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <img src="./IMG-20241211-WA0017.jpg" alt="Image" class="img-fluid rounded shadow"
+                    style="max-height: 600px;">
+            </div>
+            <div class="col-md-6 text-content">
+                <p class="fs-5 text-danger  text-justify">Chinnamma<br />
+                    Thanks ra na life lo ki vachinanduku
+
+                    Nenu na life lo eppudu jaragadu anukunna, biggest miracle in my life<br />Kani ma aa kallu ente
+                    asala antha bagunnai malli a simle undi chudu asala em avasaram ledu adi unte chalu
+                    brathikeyachu.<br/>
+                    Assala vadalali ani ledu ma, Entha love chupisthunnavo telusa asala imagine cheyyale nenu
+                    entha manchi ammai naa life ki vasthundi ani. Na gurinchi naa kanna ekkuva alochisthav nenu badha
+                    padathe asala chudalevu<br/>
+                    Naku dorikina devatha ma nuvvu Ninnu eppudu badha pettakudadu anukunna kani appudappudu
+                    adipinchesthunna ayna nannu vadalavu<br/>
+                    nenu entha pedda mata anna kuda em annatle em understanding maa asala chala great ee nuvvu, nannu
+                    emm tappu gha ardam cheskoledu nuvvu<br/> Love u ma.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class=" container image-section">
+        <img src="./IMG-20250114-WA0006.jpg" alt="Your Girl">
+        <p class="text-beside">Most beautiful girl in my world right now with golden heart</p>
+    </div>
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-content">
+                <p class="fs-5 text-danger ">Just 3 months ma we just started as classmates and turned to friends after lover finally we became wife and husband with 4 kids, what a journey kada inka chala cheyyali ma manam
+                    eppudu nenu experience chesthunna love once in a life time ma, Ma nuvvu naku eppudu chinna pilla lagane kanipisthav chala cute gha. <br/>
+                    evvani kadu ma<br/>
+                    Nuvvu maa chala manchi danivi and strong kuda strong ante chala strong nenu evarini chudale ela ninnu chusi chala vishayalalo admire chestha ma nuvvu asala deniki bayapadakkarledu niku unna understanding asala chala goppadi ma nenu chala blessed gha feel avthunna nuvvu undadam valla, niku kuncham bayam kani adi ninnu antha effect cheyyadu le nuvvu aa overthinking apesthe inka super asala kani ma chala change vachindi ra starting la kadu chala cool gha handle chesthunnav relation ni appude chala nachesav
+                    nenu eppatiki marchiponu ma aa day's ave vizag pennant days. Ee days  ee ma na life lo one of the best days ani cheppachu mostly anni niku cheppinave kani cheppali ani undi.<br/>                   Love you bangaram<br/>
+                    hoping to experience more love and be with you forever dear
+
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="./IMG-20241212-WA0039.jpg" alt="Image" class="img-fluid rounded shadow"
+                    style="max-height: 600px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="extra-sections">
+        <p>"Every love story is beautiful, but ours is my favorite." 💞</p>
+        <p>"I am so lucky to have you in my life, my love grows stronger for you every day!" 💘</p>
+    </div>
+
+    <div class="rose-container" id="rose-container"></div>
+
+    <script>
+        function createRose() {
+            const rose = document.createElement("div");
+            rose.classList.add("rose");
+            rose.style.left = Math.random() * window.innerWidth + "px";
+            rose.style.animationDuration = Math.random() * 5 + 5 + "s"; // Slow fall for elegance
+            document.getElementById("rose-container").appendChild(rose);
+
+            setTimeout(() => {
+                rose.remove();
+            }, 10000);
+        }
+
+        setInterval(createRose, 200); // Frequent rose drops for effect
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
